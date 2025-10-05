@@ -578,6 +578,8 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # ==================== ЗАПУСК БОТА ====================
 
+import asyncio
+
 def main():
     init_db()
     
@@ -588,7 +590,7 @@ def main():
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, message_handler))
     
     print("🤖 Бот запущен!")
-    app.run_polling()
+    asyncio.run(app.run_polling())
 
 if __name__ == '__main__':
     main()
