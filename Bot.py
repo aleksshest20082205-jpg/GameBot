@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 # -------- CONFIG ----------
 load_dotenv()
-API_TOKEN =  "8404293329:AAEvjbpPfYb_uDaAIakvym06kSOaNkUn9ME"  # <-- вставь токен или в .env
+API_TOKEN =  "7270759221:AAHEBgDnyxVxtxcRUe_LWSqezKp5jUm2fYk"  # <-- вставь токен или в .env
 DB_PATH = "survivor.db"
 DAY_SECONDS = 60  # длительность "дня" в секундах (для теста). Для реальной игры поставь 300-3600
 MAX_DAYS = 50
